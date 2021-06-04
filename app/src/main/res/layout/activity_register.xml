@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+        <TextView
+            android:layout_alignBaseline="@+id/et_email"
+            android:id="@+id/input_ID_Text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="아이디(이메일)" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/input_ID_Text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:hint="E-mail 을 입력하세요"
+            android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_alignBaseline="@+id/input_nicnName"
+        android:id="@+id/input_nicnName_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="닉네임" />
+
+    <EditText
+        android:id="@+id/input_nicnName"
+        android:layout_below="@+id/et_email"
+        android:layout_toRightOf="@+id/input_nicnName_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="닉네임을 입력해주세요"
+        android:inputType="textEmailAddress" />
+
+
+    <Button
+        android:id="@+id/id_check_btn"
+        android:layout_alignRight="@+id/et_email"
+        android:layout_below="@+id/input_nicnName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="중복확인"/>
+
+    <TextView
+        android:layout_alignBaseline="@+id/et_pwd"
+        android:id="@+id/et_pwd_Text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="비밀번호" />
+
+    <EditText
+        android:layout_below="@+id/id_check_btn"
+        android:id="@+id/et_pwd"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/et_pwd_Text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="비밀번호"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_alignBaseline="@+id/et_pwd_two"
+        android:id="@+id/et_pwd_two_Text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="비밀번호 확인" />
+
+    <EditText
+        android:layout_below="@+id/et_pwd"
+        android:id="@+id/et_pwd_two"
+        android:layout_toRightOf="@+id/et_pwd_Text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="비밀번호 확인"
+        android:inputType="textEmailAddress" />
+
+
+    <TextView
+        android:layout_alignBaseline="@+id/user_birthday"
+        android:id="@+id/user_birthday_Text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="생년월일" />
+
+    <EditText
+        android:layout_below="@+id/et_pwd_two"
+        android:id="@+id/user_birthday"
+        android:layout_toRightOf="@+id/et_pwd_Text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="8자리 입력"
+        android:inputType="textEmailAddress" />
+
+    <LinearLayout
+        android:id="@+id/gender_Linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_birthday">
+    <TextView
+        android:id="@+id/user_gender_text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:text="성별" />
+
+<RadioGroup
+    android:id="@+id/gender_check"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginStart="20dp">
+
+    <RadioButton
+        android:id="@+id/men_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남자" />
+
+    <RadioButton
+        android:id="@+id/women_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="여자"/>
+
+</RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="가입완료" />
+
+</RelativeLayout>
+
