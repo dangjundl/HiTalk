@@ -1,4 +1,4 @@
-# DogCatTalk
+# HiTalk
 
 **현재 개발중인 채팅어플입니다**
 
